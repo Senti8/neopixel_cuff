@@ -1,4 +1,4 @@
-/////offsolid turns 5 neopixels off.
+/////offsolid turns 6 neopixels off.
 void offsolid(uint8_t wait) {
   uint16_t i, j;
   
@@ -7,6 +7,7 @@ void offsolid(uint8_t wait) {
   strip.setPixelColor(2, strip.Color(0, 0, 0));
   strip.setPixelColor(3, strip.Color(0, 0, 0));
   strip.setPixelColor(4, strip.Color(0, 0, 0));
+  strip.setPixelColor(5, strip.Color(0, 0, 0));
   strip.show();
   delay(wait);
  

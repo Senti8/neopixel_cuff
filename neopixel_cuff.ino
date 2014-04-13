@@ -8,6 +8,7 @@
 #include <Adafruit_NeoPixel.h>
 
 #define PIN 6
+#define NUMLEDS 6  //number of neopixel LEDs
 
 // Parameter 1 = number of pixels in strip
 // Parameter 2 = pin number (most are valid)
@@ -16,7 +17,7 @@
 //   NEO_KHZ400  400 KHz (classic 'v1' (not v2) FLORA pixels, WS2811 drivers)
 //   NEO_GRB     Pixels are wired for GRB bitstream (most NeoPixel products)
 //   NEO_RGB     Pixels are wired for RGB bitstream (v1 FLORA pixels, not v2)
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(5, PIN, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUMLEDS, PIN, NEO_GRB + NEO_KHZ800);
 
 void setup() {
   strip.begin();
@@ -28,18 +29,20 @@ void loop() {
   
   bluechase(mainwait); //delay(mainwait/5);
   bluechase(mainwait); //delay(mainwait/5);
-  ledonoff(1,0,0,0,0,mainwait); delay(mainwait/5);
-  ledonoff(1,1,0,0,0,mainwait); delay(mainwait/5);
-  ledonoff(1,1,1,0,0,mainwait); delay(mainwait/5);
-  ledonoff(1,1,1,1,0,mainwait); delay(mainwait/5);
-  ledonoff(1,1,1,1,1,mainwait); delay(mainwait*1.75);
-  ledonoff(0,0,1,0,0,mainwait); delay(mainwait*5);
+  ledonoff(1,0,0,0,0,0,mainwait); delay(mainwait/5);
+  ledonoff(1,1,0,0,0,0,mainwait); delay(mainwait/5);
+  ledonoff(1,1,1,0,0,0,mainwait); delay(mainwait/5);
+  ledonoff(1,1,1,1,0,0,mainwait); delay(mainwait/5);
+  ledonoff(1,1,1,1,1,0,mainwait); delay(mainwait/5);
+  ledonoff(1,1,1,1,1,1,mainwait); delay(mainwait*1.75);
+  ledonoff(0,0,1,0,0,0,mainwait); delay(mainwait*5);
 
-  ledonoff(1,0,0,0,0,mainwait); delay(mainwait/5);
-  ledonoff(1,1,0,0,0,mainwait); delay(mainwait/5);
-  ledonoff(1,1,1,0,0,mainwait); delay(mainwait/5);
-  ledonoff(1,1,1,1,0,mainwait); delay(mainwait/5);
-  ledonoff(1,1,1,1,1,mainwait); delay(mainwait*100);
+  ledonoff(1,0,0,0,0,0,mainwait); delay(mainwait/5);
+  ledonoff(1,1,0,0,0,0,mainwait); delay(mainwait/5);
+  ledonoff(1,1,1,0,0,0,mainwait); delay(mainwait/5);
+  ledonoff(1,1,1,1,0,0,mainwait); delay(mainwait/5);
+  ledonoff(1,1,1,1,1,0,mainwait); delay(mainwait/5);
+  ledonoff(1,1,1,1,1,1,mainwait); delay(mainwait*100);
   
 }
 

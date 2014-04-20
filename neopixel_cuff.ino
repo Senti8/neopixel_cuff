@@ -1,8 +1,9 @@
-//neopixel_cuff is used to configure the light sequence for the Senti8 band
-//This code was developed as part of the 2014 NASA SpaceApps Competition, NYC USA.
-//Learn more about Senti8 project at http://www.senti8.com 
-//This portion of code was written by J. Brooks Zurn and modified from 
-//Strandtest sample code from Adafruit Neopixel library.
+// neopixel_cuff is used to configure the light sequence for the Senti8 band
+// This code was developed as part of the 2014 NASA SpaceApps Competition, NYC USA.
+// Learn more about Senti8 project at http://www.senti8.com 
+// This portion of code was written by J. Brooks Zurn and modified from 
+// Strandtest sample code from Adafruit Neopixel library.
+// Additions to support serial communication by Robert Carlsen.
 
 
 #include <Adafruit_NeoPixel.h>
